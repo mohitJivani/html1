@@ -1,0 +1,50 @@
+<html>
+<head>
+        <title>animation</title>
+        <style>
+            #test{
+                height:200px;
+                width:200px;
+                border:1px solid black;
+                background-color:blueviolet;
+                animation-duration: 5s;
+                animation-name: test;
+                animation-iteration-count: infinite;
+                position:absolute;
+            }
+            @keyframes test{
+                0%{
+                    left:0px;
+                    top:0px;
+                    background: brown;
+                }
+                25%{
+                    left:500px;
+                    top:0px;
+                    background: cadetblue;
+                }
+                50%{
+                    top:500px;
+                    left:500px;
+                    background:chartreuse;
+                }
+                75%{
+                    left:0px;
+                    right:500px;
+                    background:chocolate;
+                }
+                100%{
+                    left:0px;
+                    top:500px;
+                    background:darksalmon;
+                }
+
+            }
+
+
+        </style>
+</head>
+<body>
+        <div id="test"></div>
+</body>
+</html>
